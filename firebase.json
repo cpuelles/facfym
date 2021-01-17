@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "facfym",
     "public": "./",
     "ignore": [
       "firebase.json",
