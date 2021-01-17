@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="es-pe">
+  <meta name="googlebot" content="index, follow">
+  <meta name="robots" content="index, follow">
+  <meta name="city" content="Lambayeque">
+  <meta name="country" content="Perú (América Latina)">
+  <meta name="author" content="César Augusto Puelles Santa Cruz - Email: cpuelles@unprg.edu.pe">
+  <meta property="og:locale" content="es-pe">
+  <meta name="keywords" content="facultad, lambayeque, unprg">
+  <meta name="description" content="Este es el prototipo del sitio web de la Facultad de Ciencias Físicas y Matemáticas de la UNPRG.">
+  <title>PROTOTIPO WEB FACFYM</title>
+  <link href="./index_files/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="./index_files/style.min.css">
+</head>
+<body class="background-image">
+<div class="body">     
+<div class="container">                   
+<header class="header" role="banner">     
+<div class="header-inner clearfix">  
+<div class="header-search pull-right">           
+<div id="encabezadoFacfym" class="row divHeader">
+    <div itemscope="" itemtype="http://schema.org/Organization" class="span6 encabezado divTextoHeader">          
+        <img alt="Logo" itemprop="logo" src="./index_files/LOGO_FACFyM.png" class="imagenEncabezado span2 hidden-phone" width="120">
+        <p class="textoEncabezado span4 hidden-phone">FACFyM</p>
+    </div>
+    <div id="bannerPrincipal" class="span6 hidden-phone bannerHeader">
+        <p class="pHeader">Facultad de Ciencias Físicas y Matemáticas UNPRG</p>
+    </div>
+</div>
+<div class="menuAccesorio">
+    <a rel="noreferrer" href="https://cesarpuelles.netlify.app/" id="mapa" class="menuSecundario" target="_blank">cesarpuelles.netlify.app</a>    
+</div>
+<div id="divMenuSecundario" class="hidden-desktop"> 
+    <a id="botonMenuSecundario" data-target=".navMenuSecundario" data-toggle="collapse" class="btn btn-large btn-info icon-expand collapsed btnAccordion" onclick="alternarIcono();"></a> 
+</div>
+<div id="divMS" class="center">   
+    <a id="btnMS" data-target=".navMenuSecundario" data-toggle="collapse" class="btn btn-large btn-info icon-expand collapsed btnAccordion" onclick="alternarIcono();"></a>   
+</div>
+<div class="hidden-desktop navMenuSecundario collapsed collapse">
+    <div id="nuevoAccordion" class="accordion"><div class="accordion-group claseAccordion center "><div class="accordion-heading"><strong><a href="#" class="accordion-toggle">Inicio</a></strong></div></div>
+        <div class="accordion-group claseAccordion center">
+            <div class="accordion-heading">
+                <strong><a class="accordion-toggle" data-parent="#nuevoAccordion" data-toggle="collapse" href="./#c_">Nosotros</a></strong>
+            </div>
+            <div id="c_" class="accordion-body collapse">
+                <div>
+                    <a class="btn accordInterno" href="#">Misión y Visión</a>     
+                    <a class="btn accordInterno" href="#">Transparencia</a>             
+                    <a class="btn accordInterno" href="#">Directiva</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group claseAccordion center">
+			<div class="accordion-heading"><strong><a href="./#docentesc_" data-toggle="collapse" data-parent="#nuevoAccordion" class="accordion-toggle collapsed">Docentes</a></strong></div><div class="accordion-body collapse" id="docentesc_"><div class="accordion-inner"><div><a class="btn accordInterno" href="#">Computación y Electrónica</a><a class="btn accordInterno" href="#">Matemáticas</a><a class="btn accordInterno" href="#">Estadística</a><a class="btn accordInterno" href="#">Física</a></div></div></div>
+		</div>
+            <div class="accordion-group claseAccordion center">
+                <div class="accordion-heading">
+                    <strong><a class="accordion-toggle" data-parent="#nuevoAccordion" data-toggle="collapse" href="./#d_">Pregrado</a></strong>
+                </div>
+                <div id="d_" class="accordion-body collapse">
+                    <div>
+                        <a class="btn accordInterno" href="#">Ing. Computación e Informática</a>     
+                        <a class="btn accordInterno" href="#">Ing. Electrónica</a>             
+                        <a class="btn accordInterno" href="#">Matemáticas</a>                                                           
+                        <a class="btn accordInterno" href="#">Estadística</a>                                                         
+                        <a class="btn accordInterno" href="#">Física</a>
+                    </div>
+                </div>
+            </div>
+    </div>    
+</div>
+<script>
+    function alternarIcono() 
+    {
+        var boton = document.getElementById('botonMenuSecundario');
+        var botonAux = document.getElementById('btnMS');
+        var clase = boton.getAttribute('class');     
+        if (clase === 'btn btn-large btn-info icon-expand collapsed btnAccordion')
+        {
+            boton.setAttribute('class', 'btn btn-large btn-info icon-contract collapsed btnAccordion');
+            botonAux.setAttribute('class', 'btn btn-large btn-info icon-contract collapsed btnAccordion');
+        }
+        else
+        {
+            boton.setAttribute('class', 'btn btn-large btn-info icon-expand collapsed btnAccordion');
+            botonAux.setAttribute('class', 'btn btn-large btn-info icon-expand collapsed btnAccordion');
+        }      
+    }
+</script>              
+</div>                
+</div>           
+</header>                                      
+<nav class="navegacion span12 center visible-desktop" role="navigation" style="margin-left: 0px;">
+    <div class="nav-collapse span12" style="margin-left: 0px;">   
+        <ul class="nav menu nav-pills">
+			<li class="item-101 default current active"><a href="index.html">INICIO</a></li><li class="item-122 deeper parent"><span class="nav-header encabezadoMenu">NOSOTROS</span>
+			<ul class="nav-child unstyled small"><li class="item-123"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">MISIÓN Y VISIÓN</a></li><li class="item-129"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">TRANSPARENCIA</a></li><li class="item-135"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">DIRECTIVA</a></li></ul></li><li class="item-116 deeper parent"><span class="nav-header encabezadoMenu">PREGRADO</span>
+			<ul class="nav-child unstyled small"><li class="item-117"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">ING. COMPUTACIÓN</a></li><li class="item-118"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">ING. ELECTRÓNICA</a></li><li class="item-119"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">MATEMÁTICAS</a></li><li class="item-120"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">ESTADÍSTICA</a></li><li class="item-121"><a href="#" class="encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">FÍSICA</a></li></ul></li><li class="item-182 deeper parent"><span class="nav-header encabezadoMenu">SERVICIOS</span>
+			<ul class="nav-child unstyled small"><li class="item-141 deeper parent"><span class="nav-header encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">DIPLOMADOS</span>
+			<ul class="nav-child unstyled small"><li class="item-142"><a href="#" class="encabezadoMenuInterno menuProduccionInterno">ING. COMPUTACIÓN</a></li><li class="item-143"><a href="#" class="encabezadoMenuInterno menuProduccionInterno">ING. ELECTRÓNICA</a></li><li class="item-144"><a href="#" class="encabezadoMenuInterno menuProduccionInterno">MATEMÁTICAS</a></li><li class="item-145"><a href="#" class="encabezadoMenuInterno menuProduccionInterno">ESTADÍSTICA</a></li><li class="item-146"><a href="#" class="encabezadoMenuInterno menuProduccionInterno">FÍSICA</a></li></ul></li><li class="item-184"><span class="nav-header encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">MAESTRÍAS</span></li><li class="item-183"><span class="nav-header encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">DOCTORADOS</span></li><li class="item-185"><span class="nav-header encabezadoMenuInterno menuEstudios" style="padding: 15px 23.5px; opacity: 1">SEG. ESPECIALIDAD</span></li></ul></li><li class="item-169 deeper parent"><span class="nav-header encabezadoMenu">DOCENTES</span>
+			<ul class="nav-child unstyled small"><li class="item-170"><a href="#" class="encabezadoMenuInterno menuDocentes" style="padding: 15px 26px; opacity: 1">COMP. Y ELECTR.</a></li><li class="item-171"><a href="#" class="encabezadoMenuInterno menuDocentes" style="padding: 15px 26px; opacity: 1">MATEMÁTICAS</a></li><li class="item-172"><a href="#" class="encabezadoMenuInterno menuDocentes" style="padding: 15px 26px; opacity: 1">ESTADÍSTICA</a></li><li class="item-173"><a href="#" class="encabezadoMenuInterno menuDocentes" style="padding: 15px 26px; opacity: 1">FÍSICA</a></li></ul></li>
+		</ul>     
+    </div>          
+</nav>                                                     
+<div class="row-fluid">                                                   
+<main id="content" role="main" class="span12">
+<div class="moduletable">
+	<div id="hero-wrapper" class="span12 hidden-phone">
+		<div class="carousel-wrapper">
+			<div id="slider-facfym" class="carousel slide carousel-fade" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA" src="./index_files/ALUMNOS_PARTICIPAN_EN_CONCURSO_DE_ROBOTICA_EN_RUMANIA_big.jpg" height="500">
+						<div class="carousel-caption claseSlider">
+							<div id="divSlider" class="span7">
+								<u class="uSlider"><p class="center pTituloSlider">ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA</p></u>
+								<p class="pIntroSlider">Estudiantes de la FACFyM viajaron a Europa para participar de un concurso mundial de robótica</p>
+							</div>
+						</div>
+					</div>           
+					<div class="item">
+						<img alt="OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO" src="./index_files/OTORGAN_GRADO_DOCTOR_HONORIS_CAUSA_POR_35_ANIVERSARIO_big.jpg" height="500">
+							<div class="carousel-caption claseSlider">
+								<div id="divSlider" class="span7">
+									<u class="uSlider"><p class="center pTituloSlider">OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO</p></u>
+									<p class="pIntroSlider">Se desarrolló actividad de la facultad en donde se reconoció a principales figuras de la institución</p>					
+								</div>
+							</div>
+					</div>               
+					<div class="item">
+						<img alt="XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL" src="./index_files/XXIII_CONCURSO_DE_EXTENSION_UNIVERSITARIA_OSIPTEL_big.jpg" height="500">
+							<div class="carousel-caption claseSlider">
+								<div id="divSlider" class="span7">
+									<u class="uSlider"><p class="center pTituloSlider">XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL</p></u>
+									<p class="pIntroSlider">Egresado de Ingeniería Electrónica obtiene primer puesto en el XXIII concurso organizado por Osiptel</p>
+								</div>
+							</div>
+					</div>             
+				</div>
+            <a class="carousel-control anchorSlider" href="./#slider-facfym" data-slide="prev">
+                <svg height="110" width="152" xmlns="http://www.w3.org/2000/svg"><defs><lineargradient id="33390-_0050af-_002c62" x1="0" y1="1" x2="6.123233995736766e-17" y2="0" gradientTransform="matrix(1,0,0,1,-4,-4)"><stop offset="0%" stop-color="#fff"></stop><stop offset="100%" stop-color="#fff"></stop></lineargradient></defs>
+                    <path fill="#80a8cc" stroke="#ffffff" d="M21.871,9.814L15.684,16.001L21.871,22.188L18.335,25.725L8.612,16.001L18.335,6.276Z" transform="matrix(3.2,0,0,4,-5,-5)" opacity="0.6"></path>
+                </svg>
+            </a>
+            <a class="right carousel-control anchorSlider" href="./#slider-facfym" data-slide="next">
+                <svg height="110" width="152" xmlns="http://www.w3.org/2000/svg"><defs><lineargradient id="33390-_0050af-_002c62" x1="0" y1="1" x2="6.123233995736766e-17" y2="0" gradientTransform="matrix(1,0,0,1,-4,-4)"><stop offset="0%" stop-color="#fff"></stop><stop offset="100%" stop-color="#fff"></stop></lineargradient></defs>
+                    <path fill="#80a8cc" stroke="#ffffff" d="M10.129,22.186L16.316,15.999L10.129,9.812L13.665,6.276L23.389,15.999L13.665,25.725Z" transform="matrix(3.2,0,0,4,-5,-5)" opacity="0.6"></path>
+                </svg>
+            </a>           
+        </div>                            
+    </div>   
+</div>
+<div id="divVideoPrincipal" class="row span12 flBox hidden-phone" style="display:flex;">
+    <div class="txtPortada">Este es el prototipo del sitio web de la FACFyM sin fecha oficial de lanzamiento. Compatible para PC, Tablet y Móviles.</div>
+    <a rel="noreferrer" href="http://www.unprg.edu.pe/" target="_blank"><img alt="Portada" src="./index_files/portada.jpg" class="pull-right imgPortada"></a>
+</div>   
+</div>
+<div class="moduletable" style="margin-top: -7%;">						
+	<div class="articulo span12" style="background-color: #fff; margin-left: 0px; padding-top: 0px;">	
+		<div class="row div_art1" style="background-color: #ffffff; margin-left: 0px;">
+			<div class="span7">
+                <a href="./articulos/alumnos-participan-en-concurso-de-robotica-en-rumania.html"><picture><source srcset="./index_files/ALUMNOS_PARTICIPAN_EN_CONCURSO_DE_ROBOTICA_EN_RUMANIA_big.jpg" media="(min-width: 302px) and (max-width: 767px)"><source srcset="./index_files/ALUMNOS_PARTICIPAN_EN_CONCURSO_DE_ROBOTICA_EN_RUMANIA_thumb.png" media="(max-width: 302px)"><img alt="ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA" class="center span12 imgHeight imgMarcoInterno imgGlowing" src="./index_files/ALUMNOS_PARTICIPAN_EN_CONCURSO_DE_ROBOTICA_EN_RUMANIA_big.jpg"></picture></a>
+			</div>
+        <div class="span5" style="color: #505050;">
+            <div>
+                <p id="tituloDestacado"><br><a style="color: #505050;" href="./articulos/alumnos-participan-en-concurso-de-robotica-en-rumania.html">ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA</a></p><br>
+                <p id="parrafoDestacado">Estudiantes de la FACFyM viajaron a Europa para participar de un concurso mundial de robótica</p><br>
+            </div>
+            <section class="border center" style="margin-top:-5%">
+                <a id="ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA" style="color: #6496c8; border-color: #6496c8;" onmouseenter="document.getElementById(&#39;ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA&#39;).setAttribute(&#39;style&#39;, &#39;color:#346392;border-color:#346392;&#39;);" onmouseout="document.getElementById(&#39;ALUMNOS PARTICIPAN EN CONCURSO DE ROBÓTICA EN RUMANIA&#39;).setAttribute(&#39;style&#39;, &#39;color:#6496c8;border-color: #6496c8;&#39;);" class="btn" href="./articulos/alumnos-participan-en-concurso-de-robotica-en-rumania.html">VER MÁS</a>
+            </section>
+        </div>
+</div>
+<div class="row div_art1" style="background-color: #68c5b2; margin-left: 0px;">
+    <div class="span7">
+        <a href="./articulos/otorgan-grado-doctor-honoris-causa-por-35-aniversario.html"><picture><source srcset="./index_files/OTORGAN_GRADO_DOCTOR_HONORIS_CAUSA_POR_35_ANIVERSARIO_big.jpg" media="(min-width: 302px) and (max-width: 767px)"><source srcset="./index_files/OTORGAN_GRADO_DOCTOR_HONORIS_CAUSA_POR_35_ANIVERSARIO_thumb.png" media="(max-width: 302px)"><img alt="OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO" class="center span12 imgHeight imgMarcoInterno imgGlowing" src="./index_files/OTORGAN_GRADO_DOCTOR_HONORIS_CAUSA_POR_35_ANIVERSARIO_big.jpg"></picture></a>
+    </div>
+    <div class="span5" style="color: #ffffff;">
+        <div>
+            <p id="tituloDestacado"><br><a style="color: #ffffff;" href="./articulos/otorgan-grado-doctor-honoris-causa-por-35-aniversario.html">OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO</a></p><br>
+            <p id="parrafoDestacado">Se desarrolló actividad de la facultad en donde se reconoció a principales figuras de la institución</p><br>
+        </div>
+        <section class="border center" style="margin-top:-5%">
+            <a id="OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO" style="color: #ffffff; border-color: #ffffff;" onmouseenter="document.getElementById(&#39;OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO&#39;).setAttribute(&#39;style&#39;, &#39;color:#cccccc;border-color:#cccccc;&#39;);" onmouseout="document.getElementById(&#39;OTORGAN GRADO DOCTOR HONORIS CAUSA POR 35 ANIVERSARIO&#39;).setAttribute(&#39;style&#39;, &#39;color:#ffffff;border-color: #ffffff;&#39;);" class="btn" href="./articulos/otorgan-grado-doctor-honoris-causa-por-35-aniversario.html">VER MÁS</a>
+        </section>
+    </div>
+</div>
+<div class="row div_art1" style="background-color: #ffffff; margin-left: 0px;">
+    <div class="span7">
+        <a href="./articulos/xxiii-concurso-de-extension-universitaria-osiptel.html"><picture><source srcset="./index_files/XXIII_CONCURSO_DE_EXTENSION_UNIVERSITARIA_OSIPTEL_big.jpg" media="(min-width: 302px) and (max-width: 767px)"><source srcset="./index_files/XXIII_CONCURSO_DE_EXTENSION_UNIVERSITARIA_OSIPTEL_thumb.png" media="(max-width: 302px)"><img alt="XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL" class="center span12 imgHeight imgMarcoInterno imgGlowing" src="./index_files/XXIII_CONCURSO_DE_EXTENSION_UNIVERSITARIA_OSIPTEL_big.jpg"></picture></a>
+    </div>
+    <div class="span5" style="color: #505050;">
+        <div>
+            <p id="tituloDestacado"><br><a style="color: #505050;" href="./articulos/xxiii-concurso-de-extension-universitaria-osiptel.html">XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL</a></p><br>
+            <p id="parrafoDestacado">Egresado de Ingeniería Electrónica obtiene primer puesto en el XXIII concurso organizado por Osiptel</p><br>
+        </div>
+        <section class="border center" style="margin-top:-5%">
+            <a id="XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL" style="color: #2ecc71; border-color: #2ecc71;" onmouseenter="document.getElementById(&#39;XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL&#39;).setAttribute(&#39;style&#39;, &#39;color:#5cbc74;border-color:#5cbc74;&#39;);" onmouseout="document.getElementById(&#39;XXIII CONCURSO DE EXTENSIÓN UNIVERSITARIA OSIPTEL&#39;).setAttribute(&#39;style&#39;, &#39;color:#2ecc71;border-color: #2ecc71;&#39;);" class="btn" href="./articulos/xxiii-concurso-de-extension-universitaria-osiptel.html">VER MÁS</a>
+        </section>
+    </div>
+</div>                          
+</div>
+</main>          
+</div>     
+</div>  
+</div>   
+<footer class="footer" role="contentinfo">     
+    <div class="container">                 
+	<ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb migas">
+		<li class="active">
+			<span class="divider icon-location"></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+			<span itemprop="name">INICIO</span>
+				<meta itemprop="position" content="1">
+		</li>
+	</ul>
+<div style="background-color: #59abe3; padding: 30px; padding-bottom: 20px;">
+    <div class="span11" style="margin-left: 0px;">
+        <div itemscope="" itemtype="http://schema.org/Organization" class="span5" style="margin-left: 0px;"> 
+            <a rel="noreferrer" itemprop="url" href="http://www.unprg.edu.pe/facfym/"></a>
+            <p class="linkFooter">Contáctanos</p>
+            <p itemprop="address" itemscope="" class="datosFooter hidden-phone">Dirección: <span itemprop="streetAddress">Huamachuco</span>, <span itemprop="addressLocality">Lambayeque</span>. <span itemprop="addressCountry">Perú</span><br>Teléfono UNPRG: <span itemprop="telephone">(074)283146</span></p>
+        </div>
+        <div class="pieDePagina pull-right" style="">
+            <a rel="noreferrer" href="https://www.facebook.com/FACFYM.Oficial/" target="_blank">
+                <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg" class="iconFacebookSVG">
+                    <path id="iconoFooterFacebookHovered" fill="#ffffff" stroke="#ffffff" d="M25.566,2.433H6.433C4.233,2.433,2.433,4.233,2.433,6.433V25.568C2.433,27.767000000000003,4.233,29.568,6.433,29.568H25.568C27.767000000000003,29.568,29.568,27.767000000000003,29.568,25.568V6.433C29.566,4.232,27.768,2.433,25.566,2.433ZM25.309,16.916H22.091V28.566000000000003H17.272000000000002V16.916000000000004H14.863000000000003V12.9H17.272000000000002V10.489C17.272000000000002,7.214,18.631,5.265000000000001,22.501,5.265000000000001H25.719V9.281H23.708000000000002C22.204,9.281,22.104000000000003,9.843,22.104000000000003,10.889000000000001L22.091,12.9H25.735L25.309,16.916Z" stroke-width="1" opacity="0" transform="matrix(1.5,0,0,1.5,4.5,4.5)"></path>
+                    <path id="iconoFooterFacebook" fill="#59abe3" stroke="#ffffff" d="M25.566,2.433H6.433C4.233,2.433,2.433,4.233,2.433,6.433V25.568C2.433,27.767000000000003,4.233,29.568,6.433,29.568H25.568C27.767000000000003,29.568,29.568,27.767000000000003,29.568,25.568V6.433C29.566,4.232,27.768,2.433,25.566,2.433ZM25.309,16.916H22.091V28.566000000000003H17.272000000000002V16.916000000000004H14.863000000000003V12.9H17.272000000000002V10.489C17.272000000000002,7.214,18.631,5.265000000000001,22.501,5.265000000000001H25.719V9.281H23.708000000000002C22.204,9.281,22.104000000000003,9.843,22.104000000000003,10.889000000000001L22.091,12.9H25.735L25.309,16.916Z" transform="matrix(1.5,0,0,1.5,4.5,4.5)" opacity="1"></path>
+                </svg>
+            </a>
+            <a rel="noreferrer" href="https://twitter.com/facfym_unprg" target="_blank">
+                <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg" class="iconTwitterSVG">
+                    <path id="iconoFooterTwitterHovered" fill="#ffffff" stroke="#ffffff" d="M26.492,9.493C25.721,9.836,24.89,10.067,24.019000000000002,10.171000000000001C24.909000000000002,9.638000000000002,25.581000000000003,8.795000000000002,25.912000000000003,7.7890000000000015C25.080000000000002,8.282000000000002,24.159000000000002,8.641000000000002,23.178000000000004,8.833000000000002C22.393000000000004,7.996000000000002,21.276000000000003,7.474000000000002,20.036000000000005,7.474000000000002C17.659000000000006,7.474000000000002,15.730000000000004,9.402000000000001,15.730000000000004,11.780000000000001C15.730000000000004,12.117,15.769000000000004,12.446000000000002,15.842000000000004,12.759C12.264000000000005,12.579,9.092000000000004,10.865,6.9680000000000035,8.260000000000002C6.597000000000003,8.896,6.385000000000003,9.635000000000002,6.385000000000003,10.425C6.385000000000003,11.919,7.145000000000003,13.237,8.300000000000004,14.008000000000001C7.594000000000005,13.986,6.930000000000004,13.792000000000002,6.350000000000004,13.47C6.350000000000004,13.488000000000001,6.350000000000004,13.506,6.350000000000004,13.523000000000001C6.350000000000004,15.609000000000002,7.834000000000004,17.352,9.804000000000004,17.745C9.443000000000003,17.844,9.063000000000004,17.892,8.670000000000003,17.892C8.392000000000003,17.892,8.123000000000003,17.869,7.860000000000003,17.816C8.408000000000003,19.526999999999997,9.998000000000003,20.771,11.882000000000003,20.805999999999997C10.408000000000003,21.951999999999998,8.552000000000003,22.647999999999996,6.535000000000003,22.647999999999996C6.187000000000003,22.647999999999996,5.845000000000002,22.626999999999995,5.508000000000003,22.585999999999995C7.413000000000003,23.810999999999996,9.676000000000002,24.523999999999994,12.108000000000002,24.523999999999994C20.027,24.523999999999994,24.356,17.961999999999993,24.356,12.273999999999994C24.356,12.086999999999994,24.354000000000003,11.901999999999994,24.346,11.716999999999993C25.186,11.115,25.915,10.356,26.492,9.493" stroke-width="1" opacity="0" transform="matrix(1.5,0,0,1.5,4.5,4.5)"></path>
+                    <path id="iconoFooterTwitter" fill="#59abe3" stroke="#ffffff" d="M26.492,9.493C25.721,9.836,24.89,10.067,24.019000000000002,10.171000000000001C24.909000000000002,9.638000000000002,25.581000000000003,8.795000000000002,25.912000000000003,7.7890000000000015C25.080000000000002,8.282000000000002,24.159000000000002,8.641000000000002,23.178000000000004,8.833000000000002C22.393000000000004,7.996000000000002,21.276000000000003,7.474000000000002,20.036000000000005,7.474000000000002C17.659000000000006,7.474000000000002,15.730000000000004,9.402000000000001,15.730000000000004,11.780000000000001C15.730000000000004,12.117,15.769000000000004,12.446000000000002,15.842000000000004,12.759C12.264000000000005,12.579,9.092000000000004,10.865,6.9680000000000035,8.260000000000002C6.597000000000003,8.896,6.385000000000003,9.635000000000002,6.385000000000003,10.425C6.385000000000003,11.919,7.145000000000003,13.237,8.300000000000004,14.008000000000001C7.594000000000005,13.986,6.930000000000004,13.792000000000002,6.350000000000004,13.47C6.350000000000004,13.488000000000001,6.350000000000004,13.506,6.350000000000004,13.523000000000001C6.350000000000004,15.609000000000002,7.834000000000004,17.352,9.804000000000004,17.745C9.443000000000003,17.844,9.063000000000004,17.892,8.670000000000003,17.892C8.392000000000003,17.892,8.123000000000003,17.869,7.860000000000003,17.816C8.408000000000003,19.526999999999997,9.998000000000003,20.771,11.882000000000003,20.805999999999997C10.408000000000003,21.951999999999998,8.552000000000003,22.647999999999996,6.535000000000003,22.647999999999996C6.187000000000003,22.647999999999996,5.845000000000002,22.626999999999995,5.508000000000003,22.585999999999995C7.413000000000003,23.810999999999996,9.676000000000002,24.523999999999994,12.108000000000002,24.523999999999994C20.027,24.523999999999994,24.356,17.961999999999993,24.356,12.273999999999994C24.356,12.086999999999994,24.354000000000003,11.901999999999994,24.346,11.716999999999993C25.186,11.115,25.915,10.356,26.492,9.493" transform="matrix(1.5,0,0,1.5,4.5,4.5)" opacity="1"></path>
+                </svg>
+            </a>
+            <a id="toTop">
+                <svg height="62" width="70" xmlns="http://www.w3.org/2000/svg" class="iconUpSVG">
+                    <path id="iconoFooterMainHovered" fill="#ffffff" stroke="#ffffff" d="M24.083,15.5C24.073999999999998,20.239,20.238999999999997,24.073999999999998,15.499999999999998,24.083C10.758999999999999,24.073999999999998,6.922999999999998,20.238999999999997,6.914999999999997,15.499999999999998C6.922999999999997,10.758999999999999,10.758999999999997,6.922999999999998,15.499999999999998,6.914999999999997C17.412999999999997,6.914999999999997,19.165,7.543999999999997,20.589999999999996,8.600999999999997L18.807999999999996,10.383999999999997L27.236999999999995,12.639999999999997L24.976999999999997,4.212999999999997L23.086999999999996,6.102999999999997C21.014999999999997,4.425999999999997,18.369999999999997,3.414999999999997,15.499999999999996,3.414999999999997C8.826,3.418,3.418,8.826,3.416,15.5C3.418,22.175,8.826,27.583,15.5,27.583S27.583,22.175,27.583,15.5H24.083Z" stroke-width="1" stroke-linejoin="round" opacity="0" transform="matrix(2,0,0,2,5,5)"></path>
+                    <path id="iconoFooterMain" fill="#59abe3" stroke="#ffffff" d="M24.083,15.5C24.073999999999998,20.239,20.238999999999997,24.073999999999998,15.499999999999998,24.083C10.758999999999999,24.073999999999998,6.922999999999998,20.238999999999997,6.914999999999997,15.499999999999998C6.922999999999997,10.758999999999999,10.758999999999997,6.922999999999998,15.499999999999998,6.914999999999997C17.412999999999997,6.914999999999997,19.165,7.543999999999997,20.589999999999996,8.600999999999997L18.807999999999996,10.383999999999997L27.236999999999995,12.639999999999997L24.976999999999997,4.212999999999997L23.086999999999996,6.102999999999997C21.014999999999997,4.425999999999997,18.369999999999997,3.414999999999997,15.499999999999996,3.414999999999997C8.826,3.418,3.418,8.826,3.416,15.5C3.418,22.175,8.826,27.583,15.5,27.583S27.583,22.175,27.583,15.5H24.083Z" transform="matrix(2,0,0,2,5,5)" opacity="1"></path>
+                </svg>
+            </a>
+        </div> 
+    </div><br>   
+    <div class="divPieDePagina"><hr>
+        <p class="copyrightFooter">Copyright© 2021. Diseño e Implementación: César Augusto Puelles Santa Cruz &lt;cesarpuelles.netlify.app&gt;</p>
+    </div>  
+</div>
+<script src="./index_files/scripts.min.js.descarga"></script>
+<script>onHover('iconoFooterGoogle');onHover('iconoFooterFacebook');onHover('iconoFooterTwitter');onHover('iconoFooterMain');function onHover(nombreIcono){if(document.getElementById(nombreIcono)){document.getElementById(nombreIcono).onmouseover=function(){document.getElementById(nombreIcono+'Hovered').setAttribute('opacity','1');document.getElementById(nombreIcono).setAttribute('opacity','0')};document.getElementById(nombreIcono).onmouseout=function(){document.getElementById(nombreIcono+'Hovered').setAttribute('opacity','0');document.getElementById(nombreIcono).setAttribute('opacity','1')}}}var navMain=document.getElementsByClassName('navegacion span12 center');var btnNav=document.getElementsByClassName('navbar pull-left');if(navMain[0]){navMain[0].setAttribute('class','navegacion span12 center visible-desktop')}if(btnNav[0]){navMain[0].removeChild(btnNav[0])}function recorrerMenu(menu,estilo,i){for(i=0;i<menu.length;i++){menu[i].setAttribute('style',estilo)}}function estilosMenu(){var i=0;recorrerMenu(document.getElementsByClassName('menuEstudios'),'padding: 15px 23.5px; opacity: 1',i);recorrerMenu(document.getElementsByClassName('menuProduccion'),'padding: 15px 27.5px; opacity: 1',i);recorrerMenu(document.getElementsByClassName('menuMeritos'),'padding: 15px 27px; opacity: 1',i);recorrerMenu(document.getElementsByClassName('menuDocentes'),'padding: 15px 26px; opacity: 1',i)}var encabezadoMenuInterno=document.getElementsByClassName('encabezadoMenuInterno');var encabezadoMenu=document.getElementsByClassName('encabezadoMenu');var i=0;for(i=0;i<encabezadoMenu.length;i++){encabezadoMenu[i].addEventListener('mouseenter',estilosMenu);encabezadoMenu[i].addEventListener('mouseout',function(){var i=0;recorrerMenu(document.getElementsByClassName('menuEstudios'),'padding: 0; opacity: 0',i);recorrerMenu(document.getElementsByClassName('menuProduccion'),'padding: 0; opacity: 0',i);recorrerMenu(document.getElementsByClassName('menuMeritos'),'padding: 0; opacity: 0',i);recorrerMenu(document.getElementsByClassName('menuDocentes'),'padding: 0; opacity: 0',i)})}for(i=0;i<encabezadoMenuInterno.length;i++){encabezadoMenuInterno[i].addEventListener('mouseenter',estilosMenu)}if(document.getElementById('iconoBusqueda1')){document.getElementById('iconoBusqueda1').onclick=function(){document.getElementById('mod-finder-searchform1').submit()}}if(document.getElementById('carousel-busqueda')){document.getElementById('iconoBusqueda').onclick=function(){document.getElementById('carousel-busqueda').submit()}}else if(document.getElementById('iconoBusqueda')){document.getElementById('iconoBusqueda').onclick=function(){document.getElementById('mod-finder-searchform').submit()}}(function($){$('#toTop').click(function(){$('html, body').animate({scrollTop:$('#encabezadoFacfym').offset().top},600)})})(jQuery);</script>
+</div>     
+</footer>
+</body>
+</html>
